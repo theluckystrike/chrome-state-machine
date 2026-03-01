@@ -1,0 +1,37 @@
+{
+    "name": "chrome-state-machine",
+    "version": "0.1.0",
+    "description": "Finite state machine for Chrome extensions — transitions with guards and side effects, persistence across service worker restarts, and MV3 lifecycle management.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "state-machine",
+        "fsm",
+        "transitions",
+        "guards",
+        "lifecycle",
+        "manifest-v3",
+        "browser-extension",
+        "service-worker"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-state-machine.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
